@@ -73,7 +73,7 @@ namespace CafeBase
                 case "Администратор":
                     {
                         this.Hide();
-                        Administrator ad = new Administrator();
+                        OpenDialogAdmin ad = new OpenDialogAdmin();
                         ad.Show();
                         break;
                     }
@@ -87,7 +87,7 @@ namespace CafeBase
                 case "Повар":
                     {
                         this.Hide();
-                        Cooking Cook = new Cooking();
+                        l Cook = new l();
                         Cook.Show();
                         break;
                     }

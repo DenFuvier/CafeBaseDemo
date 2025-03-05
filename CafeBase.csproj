@@ -99,11 +99,41 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Ordern.cs" />
+    <Compile Include="Windows\AddOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\AddOrderForm.Designer.cs">
+      <DependentUpon>AddOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\OrdernS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\OrdernS.Designer.cs">
+      <DependentUpon>OrdernS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\NewUserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\NewUserAdd.Designer.cs">
+      <DependentUpon>NewUserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\OpenDialogAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\OpenDialogAdmin.Designer.cs">
+      <DependentUpon>OpenDialogAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Cooking.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Windows\Cooking.Designer.cs">
       <DependentUpon>Cooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Shifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Shifts.Designer.cs">
+      <DependentUpon>Shifts.cs</DependentUpon>
     </Compile>
     <Compile Include="Windows\Waiter.cs">
       <SubType>Form</SubType>
@@ -127,6 +157,15 @@
     </Compile>
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Windows\AddOrderForm.resx">
+      <DependentUpon>AddOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\NewUserAdd.resx">
+      <DependentUpon>NewUserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\OpenDialogAdmin.resx">
+      <DependentUpon>OpenDialogAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Windows\Administrator.resx">
       <DependentUpon>Administrator.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +184,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Windows\OrdernS.resx">
+      <DependentUpon>OrdernS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Windows\Waiter.resx">
       <DependentUpon>Waiter.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,6 +1,6 @@
 ﻿namespace CafeBase.Windows
 {
-    partial class Cooking
+    partial class l
     {
         /// <summary>
         /// Required designer variable.
@@ -29,33 +29,122 @@
         private void InitializeComponent()
         {
             this.Exit = new System.Windows.Forms.Button();
+            this.ViewOrdernSS = new System.Windows.Forms.DataGridView();
+            this.Change = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TRUST = new System.Windows.Forms.ComboBox();
+            this.ID_box = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewOrdernSS)).BeginInit();
             this.SuspendLayout();
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(693, 410);
+            this.Exit.Location = new System.Drawing.Point(1364, 441);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(95, 28);
+            this.Exit.Size = new System.Drawing.Size(112, 35);
             this.Exit.TabIndex = 0;
             this.Exit.Text = "Выход";
             this.Exit.UseVisualStyleBackColor = true;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // Cooking
+            // ViewOrdernSS
+            // 
+            this.ViewOrdernSS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ViewOrdernSS.Location = new System.Drawing.Point(12, 12);
+            this.ViewOrdernSS.Name = "ViewOrdernSS";
+            this.ViewOrdernSS.ReadOnly = true;
+            this.ViewOrdernSS.RowHeadersWidth = 51;
+            this.ViewOrdernSS.RowTemplate.Height = 24;
+            this.ViewOrdernSS.Size = new System.Drawing.Size(1464, 272);
+            this.ViewOrdernSS.TabIndex = 1;
+            // 
+            // Change
+            // 
+            this.Change.Location = new System.Drawing.Point(371, 346);
+            this.Change.Name = "Change";
+            this.Change.Size = new System.Drawing.Size(110, 33);
+            this.Change.TabIndex = 2;
+            this.Change.Text = "Изменить";
+            this.Change.UseVisualStyleBackColor = true;
+            this.Change.Click += new System.EventHandler(this.Change_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 346);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 16);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Статус заказа  :";
+            // 
+            // TRUST
+            // 
+            this.TRUST.FormattingEnabled = true;
+            this.TRUST.Items.AddRange(new object[] {
+            "Готово",
+            "Не готово"});
+            this.TRUST.Location = new System.Drawing.Point(130, 346);
+            this.TRUST.Name = "TRUST";
+            this.TRUST.Size = new System.Drawing.Size(221, 24);
+            this.TRUST.TabIndex = 5;
+            // 
+            // ID_box
+            // 
+            this.ID_box.Location = new System.Drawing.Point(-4, 3);
+            this.ID_box.Name = "ID_box";
+            this.ID_box.Size = new System.Drawing.Size(10, 22);
+            this.ID_box.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(148, 305);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(203, 22);
+            this.textBox1.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 308);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 16);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Выбранный заказ :";
+            // 
+            // l
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1488, 488);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ID_box);
+            this.Controls.Add(this.TRUST);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Change);
+            this.Controls.Add(this.ViewOrdernSS);
             this.Controls.Add(this.Exit);
-            this.Name = "Cooking";
+            this.Name = "l";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cook";
+            ((System.ComponentModel.ISupportInitialize)(this.ViewOrdernSS)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button Exit;
+        private System.Windows.Forms.DataGridView ViewOrdernSS;
+        private System.Windows.Forms.Button Change;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox TRUST;
+        private System.Windows.Forms.TextBox ID_box;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -1,24 +1,17 @@
 ﻿using CafeBase.Classes;
 using CafeBase.ConnectSQL;
-using CafeBase.Windows;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CafeBase
 {
-    public partial class Waiter: Form
+    public partial class OrdernS: Form
     {
         List<Ordern> orders_ = new List<Ordern>();
         SqlConnector sql = new SqlConnector();
-        public Waiter()
+        public OrdernS()
         {
             InitializeComponent();
             LoadOrdens();
@@ -27,8 +20,8 @@ namespace CafeBase
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
         }
         private void LoadOrdens()
-        {
-            string cs = sql.Getconnect();
+        { 
+         string cs = sql.Getconnect();
             try
             {
                 var con = new MySqlConnection(cs);
@@ -36,6 +29,7 @@ namespace CafeBase
                 var stm = "SELECT * FROM orders";
                 var cmd = new MySqlCommand(stm, con);
                 MySqlDataReader Reader = cmd.ExecuteReader();
+
                 orders_.Clear();
                 while (Reader.Read())
                 {
@@ -47,8 +41,8 @@ namespace CafeBase
                     string DishNames = Reader.GetString(5);
                     int WaiterID = Reader.GetInt32(6);
                     int CookID = Reader.GetInt32(7);
-
-
+                 
+               
                     Ordern use = new Ordern
                     {
                         OrderID = OrderID,
@@ -61,7 +55,7 @@ namespace CafeBase
                         ReadyOrNot = ReadyOrNot
                     };
                     orders_.Add(use);
-
+                   
                 }
                 ViewOrdernS.DataSource = null;
                 ViewOrdernS.DataSource = orders_;
@@ -72,23 +66,13 @@ namespace CafeBase
                 MessageBox.Show($"Ошибка при загрузке заказов: {ex.Message}");
             }
         }
+
         private void Exit_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MainForm MH = new MainForm();
+            OpenDialogAdmin MH = new OpenDialogAdmin();
             MH.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AddOrderForm AD = new AddOrderForm();
-            AD.Show();
-        }
-
-        private void Waiter_Load(object sender, EventArgs e)
-        {
-
+            this.Close();
+            
         }
     }
 }
