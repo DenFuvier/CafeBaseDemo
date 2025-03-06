@@ -1,6 +1,7 @@
 ﻿using CafeBase.Classes;
 using CafeBase.ConnectSQL;
 using MySql.Data.MySqlClient;
+using Mysqlx;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -25,8 +26,9 @@ namespace CafeBase.Windows
         {
             int number = ViewOrdernSS.CurrentRow.Index;
             Ordern X = orderss_[number];
-            TRUST.Text = X.ReadyOrNot;
+            StatusFood.Text = X.ReadyOrNot;
             textBox1.Text = X.DishNames;
+            ID_box.Text = X.OrderID.ToString();
         }
         private void LoadOrdens()
         {
@@ -94,17 +96,18 @@ namespace CafeBase.Windows
             string cs = sql.Getconnect();
             try
             {
-                var con = new MySqlConnection(cs);
-                con.Open();
-                var stm = $"UPDATE orders SET ReadyOrNot = '{TRUST.Text}' WHERE OrderID = {ID_box.Text}";
-                var cmd = new MySqlCommand(stm, con);
-                con.Close();
-                MessageBox.Show("ОК");
+                using (var con = new MySqlConnection(cs))
+                {
+                    con.Open();
+                    var stm = $"UPDATE orders SET ReadyOrNot = '{StatusFood.Text}' WHERE OrderID = '{ID_box.Text}'";
+
+                    var cmd = new MySqlCommand(stm, con);
+                    cmd.ExecuteNonQuery();
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-
             }
         }
     }

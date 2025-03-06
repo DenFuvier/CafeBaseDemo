@@ -7,10 +7,10 @@ using System.Windows.Forms;
 namespace CafeBase.Windows
 {
    
-    public partial class NewUserAdd: Form
+    public partial class NewUserAdds: Form
     {
         SqlConnector sql = new SqlConnector();
-        public NewUserAdd()
+        public NewUserAdds()
         {
             InitializeComponent();
             Status_Box.Text = "Активен";

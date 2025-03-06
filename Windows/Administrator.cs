@@ -98,7 +98,7 @@ namespace CafeBase
 
 
                 var stm = $"UPDATE access_rights SET Name = '{Name_box.Text}', " + $"Surname = '{Surname_Box.Text}', Job_title = '{Job_Title_Box.Text}', " +
-                          $"Status = '{TestClone.Text}' " +  $"WHERE id = '{ID_Box.Text}'";
+                          $"Status = '{TestClone.Text}' " + $"WHERE id = '{ID_Box.Text}'";
 
                 var cmd = new MySqlCommand(stm, con);
                 MySqlDataReader Reader = cmd.ExecuteReader();
@@ -121,7 +121,7 @@ namespace CafeBase
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            NewUserAdd AS = new NewUserAdd();
+            NewUserAdds AS = new NewUserAdds();
             AS.Show();
         }
     }

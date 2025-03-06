@@ -32,7 +32,7 @@
             this.ViewOrdernSS = new System.Windows.Forms.DataGridView();
             this.Change = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.TRUST = new System.Windows.Forms.ComboBox();
+            this.StatusFood = new System.Windows.Forms.ComboBox();
             this.ID_box = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,9 +41,10 @@
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(1364, 441);
+            this.Exit.Location = new System.Drawing.Point(1023, 358);
+            this.Exit.Margin = new System.Windows.Forms.Padding(2);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(112, 35);
+            this.Exit.Size = new System.Drawing.Size(84, 28);
             this.Exit.TabIndex = 0;
             this.Exit.Text = "Выход";
             this.Exit.UseVisualStyleBackColor = true;
@@ -52,19 +53,21 @@
             // ViewOrdernSS
             // 
             this.ViewOrdernSS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ViewOrdernSS.Location = new System.Drawing.Point(12, 12);
+            this.ViewOrdernSS.Location = new System.Drawing.Point(9, 10);
+            this.ViewOrdernSS.Margin = new System.Windows.Forms.Padding(2);
             this.ViewOrdernSS.Name = "ViewOrdernSS";
             this.ViewOrdernSS.ReadOnly = true;
             this.ViewOrdernSS.RowHeadersWidth = 51;
             this.ViewOrdernSS.RowTemplate.Height = 24;
-            this.ViewOrdernSS.Size = new System.Drawing.Size(1464, 272);
+            this.ViewOrdernSS.Size = new System.Drawing.Size(1098, 221);
             this.ViewOrdernSS.TabIndex = 1;
             // 
             // Change
             // 
-            this.Change.Location = new System.Drawing.Point(371, 346);
+            this.Change.Location = new System.Drawing.Point(278, 281);
+            this.Change.Margin = new System.Windows.Forms.Padding(2);
             this.Change.Name = "Change";
-            this.Change.Size = new System.Drawing.Size(110, 33);
+            this.Change.Size = new System.Drawing.Size(82, 27);
             this.Change.TabIndex = 2;
             this.Change.Text = "Изменить";
             this.Change.UseVisualStyleBackColor = true;
@@ -73,63 +76,69 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 346);
+            this.label1.Location = new System.Drawing.Point(9, 281);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 16);
+            this.label1.Size = new System.Drawing.Size(89, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Статус заказа  :";
             // 
-            // TRUST
+            // StatusFood
             // 
-            this.TRUST.FormattingEnabled = true;
-            this.TRUST.Items.AddRange(new object[] {
+            this.StatusFood.FormattingEnabled = true;
+            this.StatusFood.Items.AddRange(new object[] {
             "Готово",
             "Не готово"});
-            this.TRUST.Location = new System.Drawing.Point(130, 346);
-            this.TRUST.Name = "TRUST";
-            this.TRUST.Size = new System.Drawing.Size(221, 24);
-            this.TRUST.TabIndex = 5;
+            this.StatusFood.Location = new System.Drawing.Point(98, 281);
+            this.StatusFood.Margin = new System.Windows.Forms.Padding(2);
+            this.StatusFood.Name = "StatusFood";
+            this.StatusFood.Size = new System.Drawing.Size(167, 21);
+            this.StatusFood.TabIndex = 5;
             // 
             // ID_box
             // 
-            this.ID_box.Location = new System.Drawing.Point(-4, 3);
+            this.ID_box.Location = new System.Drawing.Point(-5, -3);
+            this.ID_box.Margin = new System.Windows.Forms.Padding(2);
             this.ID_box.Name = "ID_box";
-            this.ID_box.Size = new System.Drawing.Size(10, 22);
+            this.ID_box.Size = new System.Drawing.Size(10, 20);
             this.ID_box.TabIndex = 6;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 305);
+            this.textBox1.Location = new System.Drawing.Point(111, 248);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(203, 22);
+            this.textBox1.Size = new System.Drawing.Size(153, 20);
             this.textBox1.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 308);
+            this.label2.Location = new System.Drawing.Point(9, 250);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 16);
+            this.label2.Size = new System.Drawing.Size(105, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Выбранный заказ :";
             // 
             // l
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1488, 488);
+            this.ClientSize = new System.Drawing.Size(1116, 396);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ID_box);
-            this.Controls.Add(this.TRUST);
+            this.Controls.Add(this.StatusFood);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Change);
             this.Controls.Add(this.ViewOrdernSS);
             this.Controls.Add(this.Exit);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "l";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cook";
+            this.Text = "Повар";
             ((System.ComponentModel.ISupportInitialize)(this.ViewOrdernSS)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -142,7 +151,7 @@
         private System.Windows.Forms.DataGridView ViewOrdernSS;
         private System.Windows.Forms.Button Change;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox TRUST;
+        private System.Windows.Forms.ComboBox StatusFood;
         private System.Windows.Forms.TextBox ID_box;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;

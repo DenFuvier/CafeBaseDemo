@@ -99,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Ordern.cs" />
+    <Compile Include="Classes\SShifts.cs" />
     <Compile Include="Windows\AddOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,11 +112,11 @@
     <Compile Include="Windows\OrdernS.Designer.cs">
       <DependentUpon>OrdernS.cs</DependentUpon>
     </Compile>
-    <Compile Include="Windows\NewUserAdd.cs">
+    <Compile Include="Windows\NewUserAdds.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Windows\NewUserAdd.Designer.cs">
-      <DependentUpon>NewUserAdd.cs</DependentUpon>
+    <Compile Include="Windows\NewUserAdds.Designer.cs">
+      <DependentUpon>NewUserAdds.cs</DependentUpon>
     </Compile>
     <Compile Include="Windows\OpenDialogAdmin.cs">
       <SubType>Form</SubType>
@@ -160,8 +161,8 @@
     <EmbeddedResource Include="Windows\AddOrderForm.resx">
       <DependentUpon>AddOrderForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Windows\NewUserAdd.resx">
-      <DependentUpon>NewUserAdd.cs</DependentUpon>
+    <EmbeddedResource Include="Windows\NewUserAdds.resx">
+      <DependentUpon>NewUserAdds.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Windows\OpenDialogAdmin.resx">
       <DependentUpon>OpenDialogAdmin.cs</DependentUpon>
@@ -186,6 +187,9 @@
     </Compile>
     <EmbeddedResource Include="Windows\OrdernS.resx">
       <DependentUpon>OrdernS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Shifts.resx">
+      <DependentUpon>Shifts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Windows\Waiter.resx">
       <DependentUpon>Waiter.cs</DependentUpon>

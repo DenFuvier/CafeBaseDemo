@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Shift_View = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.Shift_View)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // Shift_View
+            // 
+            this.Shift_View.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Shift_View.Location = new System.Drawing.Point(12, 12);
+            this.Shift_View.Name = "Shift_View";
+            this.Shift_View.Size = new System.Drawing.Size(776, 142);
+            this.Shift_View.TabIndex = 0;
+            // 
+            // Shifts
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Shift_View);
+            this.Name = "Shifts";
             this.Text = "Shifts";
+            ((System.ComponentModel.ISupportInitialize)(this.Shift_View)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView Shift_View;
     }
 }
