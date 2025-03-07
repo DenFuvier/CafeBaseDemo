@@ -11,6 +11,6 @@ namespace CafeBase.Classes
         public int id { get; set; }
         public int Userid { get; set; }
         public DateTime ShiftsDate { get; set; }
-        public DateTime Shiftstime { get; set; }
+        public TimeSpan Shiftstime { get; set; }
     }
 }

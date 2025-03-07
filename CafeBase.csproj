@@ -100,6 +100,19 @@
   <ItemGroup>
     <Compile Include="Classes\Ordern.cs" />
     <Compile Include="Classes\SShifts.cs" />
+    <Compile Include="Classes\Users.cs" />
+    <Compile Include="Windows\AddShifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\AddShifts.Designer.cs">
+      <DependentUpon>AddShifts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ShiftsADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\ShiftsADM.Designer.cs">
+      <DependentUpon>ShiftsADM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AddOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,7 +161,6 @@
     <Compile Include="Windows\Administrator.Designer.cs">
       <DependentUpon>Administrator.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Users.cs" />
     <Compile Include="ConnectSQL\SqlConnector.cs" />
     <Compile Include="Windows\MainForm.cs">
       <SubType>Form</SubType>
@@ -158,6 +170,12 @@
     </Compile>
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Windows\AddShifts.resx">
+      <DependentUpon>AddShifts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\ShiftsADM.resx">
+      <DependentUpon>ShiftsADM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Windows\AddOrderForm.resx">
       <DependentUpon>AddOrderForm.cs</DependentUpon>
     </EmbeddedResource>

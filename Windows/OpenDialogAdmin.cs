@@ -1,4 +1,5 @@
 ﻿using CafeBase.Classes;
+using CafeBase.Trash;
 using System;
 using System.Windows.Forms;
 
@@ -38,6 +39,13 @@ namespace CafeBase
             this.Hide();
             OrdernS OP = new OrdernS();
             OP.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ShiftsADM SHD = new ShiftsADM();
+            SHD.Show();
         }
     }
 }

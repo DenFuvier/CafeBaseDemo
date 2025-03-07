@@ -1,27 +1,24 @@
 ﻿using CafeBase.Classes;
 using CafeBase.ConnectSQL;
+using CafeBase.Windows;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace CafeBase.Windows
+namespace CafeBase.Trash
 {
-    public partial class Shifts: Form
+    public partial class ShiftsADM: Form
     {
         SqlConnector sql = new SqlConnector();
         List<SShifts> shifts_ = new List<SShifts>();
         List<Users> use_ = new List<Users>();
-        public Shifts()
+        public ShiftsADM()
         {
             InitializeComponent();
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.FormBorderStyle = FormBorderStyle.FixedDialog;
-            LoadShift();
+            ADM();
         }
-     
-        private void LoadShift()
+        private void ADM()
         {
             string cs = sql.Getconnect();
             try
@@ -47,24 +44,29 @@ namespace CafeBase.Windows
                     };
                     shifts_.Add(SH);
                 }
-                Shift_View.DataSource = null;
-                 Shift_View.DataSource  = shifts_;
-                Shift_View.Refresh();
+                AdminViewShifts.DataSource = null;
+                AdminViewShifts.DataSource = shifts_;
+                AdminViewShifts.Refresh();
                 con.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-        
-        
         }
+        
 
-        private void Exit_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Waiter WH = new Waiter();
-            WH.Show();
+            AddShifts ADS = new AddShifts();
+            ADS.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
         }
     }
 }

@@ -41,10 +41,10 @@
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(1023, 358);
-            this.Exit.Margin = new System.Windows.Forms.Padding(2);
+            this.Exit.Location = new System.Drawing.Point(1364, 441);
+            this.Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(84, 28);
+            this.Exit.Size = new System.Drawing.Size(112, 34);
             this.Exit.TabIndex = 0;
             this.Exit.Text = "Выход";
             this.Exit.UseVisualStyleBackColor = true;
@@ -53,21 +53,21 @@
             // ViewOrdernSS
             // 
             this.ViewOrdernSS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ViewOrdernSS.Location = new System.Drawing.Point(9, 10);
-            this.ViewOrdernSS.Margin = new System.Windows.Forms.Padding(2);
+            this.ViewOrdernSS.Location = new System.Drawing.Point(12, 12);
+            this.ViewOrdernSS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ViewOrdernSS.Name = "ViewOrdernSS";
             this.ViewOrdernSS.ReadOnly = true;
             this.ViewOrdernSS.RowHeadersWidth = 51;
             this.ViewOrdernSS.RowTemplate.Height = 24;
-            this.ViewOrdernSS.Size = new System.Drawing.Size(1098, 221);
+            this.ViewOrdernSS.Size = new System.Drawing.Size(1464, 272);
             this.ViewOrdernSS.TabIndex = 1;
             // 
             // Change
             // 
-            this.Change.Location = new System.Drawing.Point(278, 281);
-            this.Change.Margin = new System.Windows.Forms.Padding(2);
+            this.Change.Location = new System.Drawing.Point(371, 346);
+            this.Change.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Change.Name = "Change";
-            this.Change.Size = new System.Drawing.Size(82, 27);
+            this.Change.Size = new System.Drawing.Size(109, 33);
             this.Change.TabIndex = 2;
             this.Change.Text = "Изменить";
             this.Change.UseVisualStyleBackColor = true;
@@ -76,10 +76,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 281);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(12, 346);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.Size = new System.Drawing.Size(112, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Статус заказа  :";
             // 
@@ -89,44 +88,43 @@
             this.StatusFood.Items.AddRange(new object[] {
             "Готово",
             "Не готово"});
-            this.StatusFood.Location = new System.Drawing.Point(98, 281);
-            this.StatusFood.Margin = new System.Windows.Forms.Padding(2);
+            this.StatusFood.Location = new System.Drawing.Point(131, 346);
+            this.StatusFood.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.StatusFood.Name = "StatusFood";
-            this.StatusFood.Size = new System.Drawing.Size(167, 21);
+            this.StatusFood.Size = new System.Drawing.Size(221, 24);
             this.StatusFood.TabIndex = 5;
             // 
             // ID_box
             // 
-            this.ID_box.Location = new System.Drawing.Point(-5, -3);
-            this.ID_box.Margin = new System.Windows.Forms.Padding(2);
+            this.ID_box.Location = new System.Drawing.Point(-7, -4);
+            this.ID_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ID_box.Name = "ID_box";
-            this.ID_box.Size = new System.Drawing.Size(10, 20);
+            this.ID_box.Size = new System.Drawing.Size(12, 22);
             this.ID_box.TabIndex = 6;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(111, 248);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Location = new System.Drawing.Point(148, 305);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(153, 20);
+            this.textBox1.Size = new System.Drawing.Size(531, 22);
             this.textBox1.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 250);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(12, 308);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 13);
+            this.label2.Size = new System.Drawing.Size(130, 16);
             this.label2.TabIndex = 8;
             this.label2.Text = "Выбранный заказ :";
             // 
             // l
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1116, 396);
+            this.ClientSize = new System.Drawing.Size(1488, 487);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ID_box);
@@ -135,7 +133,7 @@
             this.Controls.Add(this.Change);
             this.Controls.Add(this.ViewOrdernSS);
             this.Controls.Add(this.Exit);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "l";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Повар";
