@@ -94,7 +94,7 @@ namespace CafeBase
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Shifts shifts = new Shifts();
+            OrderWhaiter shifts = new OrderWhaiter();
             shifts.Show();
         }
     }

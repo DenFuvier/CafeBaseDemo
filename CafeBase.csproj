@@ -51,6 +51,7 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data, Version=9.2.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>packages\MySql.Data.9.2.0\lib\net462\MySql.Data.dll</HintPath>
     </Reference>
@@ -143,11 +144,11 @@
     <Compile Include="Windows\Cooking.Designer.cs">
       <DependentUpon>Cooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Shifts.cs">
+    <Compile Include="Windows\OrderWhaiter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Windows\Shifts.Designer.cs">
-      <DependentUpon>Shifts.cs</DependentUpon>
+    <Compile Include="Windows\OrderWhaiter.Designer.cs">
+      <DependentUpon>OrderWhaiter.cs</DependentUpon>
     </Compile>
     <Compile Include="Windows\Waiter.cs">
       <SubType>Form</SubType>
@@ -206,12 +207,13 @@
     <EmbeddedResource Include="Windows\OrdernS.resx">
       <DependentUpon>OrdernS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Windows\Shifts.resx">
-      <DependentUpon>Shifts.cs</DependentUpon>
+    <EmbeddedResource Include="Windows\OrderWhaiter.resx">
+      <DependentUpon>OrderWhaiter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Windows\Waiter.resx">
       <DependentUpon>Waiter.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Trash\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
