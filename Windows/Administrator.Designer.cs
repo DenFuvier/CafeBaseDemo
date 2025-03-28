@@ -46,10 +46,10 @@
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(520, 334);
-            this.Exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Exit.Location = new System.Drawing.Point(693, 411);
+            this.Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(71, 22);
+            this.Exit.Size = new System.Drawing.Size(95, 27);
             this.Exit.TabIndex = 0;
             this.Exit.Text = "Вернуться";
             this.Exit.UseVisualStyleBackColor = true;
@@ -57,79 +57,76 @@
             // 
             // UserView
             // 
+            this.UserView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UserView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.UserView.Location = new System.Drawing.Point(9, 10);
-            this.UserView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UserView.Location = new System.Drawing.Point(12, 12);
+            this.UserView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UserView.Name = "UserView";
             this.UserView.ReadOnly = true;
             this.UserView.RowHeadersWidth = 51;
             this.UserView.RowTemplate.Height = 24;
-            this.UserView.Size = new System.Drawing.Size(582, 122);
+            this.UserView.Size = new System.Drawing.Size(776, 150);
             this.UserView.TabIndex = 1;
             this.UserView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UserView_CellContentClick);
             // 
             // Name_box
             // 
-            this.Name_box.Location = new System.Drawing.Point(74, 160);
-            this.Name_box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name_box.Location = new System.Drawing.Point(99, 197);
+            this.Name_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name_box.Name = "Name_box";
-            this.Name_box.Size = new System.Drawing.Size(174, 20);
+            this.Name_box.Size = new System.Drawing.Size(231, 22);
             this.Name_box.TabIndex = 2;
             // 
             // Surname_Box
             // 
-            this.Surname_Box.Location = new System.Drawing.Point(74, 183);
-            this.Surname_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Surname_Box.Location = new System.Drawing.Point(99, 225);
+            this.Surname_Box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Surname_Box.Name = "Surname_Box";
-            this.Surname_Box.Size = new System.Drawing.Size(174, 20);
+            this.Surname_Box.Size = new System.Drawing.Size(231, 22);
             this.Surname_Box.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 160);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(9, 197);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.Size = new System.Drawing.Size(33, 16);
             this.label1.TabIndex = 6;
             this.label1.Text = "Имя";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 183);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(9, 225);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.Size = new System.Drawing.Size(66, 16);
             this.label2.TabIndex = 7;
             this.label2.Text = "Фамилия";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 206);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(9, 254);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.Size = new System.Drawing.Size(78, 16);
             this.label3.TabIndex = 8;
             this.label3.Text = "Должность";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 228);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(9, 281);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.Size = new System.Drawing.Size(53, 16);
             this.label4.TabIndex = 9;
             this.label4.Text = "Статус";
             // 
             // Change
             // 
-            this.Change.Location = new System.Drawing.Point(266, 250);
-            this.Change.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Change.Location = new System.Drawing.Point(355, 308);
+            this.Change.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Change.Name = "Change";
-            this.Change.Size = new System.Drawing.Size(71, 25);
+            this.Change.Size = new System.Drawing.Size(95, 31);
             this.Change.TabIndex = 10;
             this.Change.Text = "Изменить";
             this.Change.UseVisualStyleBackColor = true;
@@ -137,10 +134,10 @@
             // 
             // ID_Box
             // 
-            this.ID_Box.Location = new System.Drawing.Point(596, 10);
-            this.ID_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ID_Box.Location = new System.Drawing.Point(795, 12);
+            this.ID_Box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ID_Box.Name = "ID_Box";
-            this.ID_Box.Size = new System.Drawing.Size(8, 20);
+            this.ID_Box.Size = new System.Drawing.Size(9, 22);
             this.ID_Box.TabIndex = 11;
             // 
             // TestClone
@@ -149,18 +146,18 @@
             this.TestClone.Items.AddRange(new object[] {
             "Уволен",
             "Активен"});
-            this.TestClone.Location = new System.Drawing.Point(74, 230);
-            this.TestClone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TestClone.Location = new System.Drawing.Point(99, 283);
+            this.TestClone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TestClone.Name = "TestClone";
-            this.TestClone.Size = new System.Drawing.Size(174, 21);
+            this.TestClone.Size = new System.Drawing.Size(231, 24);
             this.TestClone.TabIndex = 12;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(462, 160);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(616, 197);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 36);
+            this.button1.Size = new System.Drawing.Size(172, 44);
             this.button1.TabIndex = 13;
             this.button1.Text = "Добавить сотрудника";
             this.button1.UseVisualStyleBackColor = true;
@@ -173,17 +170,18 @@
             "Администратор",
             "Официант",
             "Повар"});
-            this.Job_Title_Box.Location = new System.Drawing.Point(74, 206);
-            this.Job_Title_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Job_Title_Box.Location = new System.Drawing.Point(99, 254);
+            this.Job_Title_Box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Job_Title_Box.Name = "Job_Title_Box";
-            this.Job_Title_Box.Size = new System.Drawing.Size(174, 21);
+            this.Job_Title_Box.Size = new System.Drawing.Size(231, 24);
             this.Job_Title_Box.TabIndex = 14;
             // 
             // Administrator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Job_Title_Box);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TestClone);
@@ -197,7 +195,7 @@
             this.Controls.Add(this.Name_box);
             this.Controls.Add(this.UserView);
             this.Controls.Add(this.Exit);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Administrator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Администратор";

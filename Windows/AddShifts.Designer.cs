@@ -46,83 +46,81 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 216);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(15, 266);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 13);
+            this.label1.Size = new System.Drawing.Size(137, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "UserdID сотрудника";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 238);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(15, 293);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.Size = new System.Drawing.Size(39, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Дата";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 261);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(15, 321);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.Size = new System.Drawing.Size(48, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Время";
             // 
             // UserIDView
             // 
+            this.UserIDView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UserIDView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.UserIDView.Location = new System.Drawing.Point(9, 10);
-            this.UserIDView.Margin = new System.Windows.Forms.Padding(2);
+            this.UserIDView.Location = new System.Drawing.Point(12, 12);
+            this.UserIDView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UserIDView.Name = "UserIDView";
             this.UserIDView.ReadOnly = true;
             this.UserIDView.RowHeadersWidth = 51;
             this.UserIDView.RowTemplate.Height = 24;
-            this.UserIDView.Size = new System.Drawing.Size(661, 94);
+            this.UserIDView.Size = new System.Drawing.Size(881, 116);
             this.UserIDView.TabIndex = 4;
             // 
             // ID_Box
             // 
-            this.ID_Box.Location = new System.Drawing.Point(-3, 0);
-            this.ID_Box.Margin = new System.Windows.Forms.Padding(2);
+            this.ID_Box.Location = new System.Drawing.Point(-4, 0);
+            this.ID_Box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ID_Box.Name = "ID_Box";
-            this.ID_Box.Size = new System.Drawing.Size(8, 20);
+            this.ID_Box.Size = new System.Drawing.Size(9, 22);
             this.ID_Box.TabIndex = 5;
             // 
             // UserID_Box
             // 
-            this.UserID_Box.Location = new System.Drawing.Point(122, 211);
-            this.UserID_Box.Margin = new System.Windows.Forms.Padding(2);
+            this.UserID_Box.Location = new System.Drawing.Point(163, 260);
+            this.UserID_Box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UserID_Box.Name = "UserID_Box";
-            this.UserID_Box.Size = new System.Drawing.Size(170, 20);
+            this.UserID_Box.Size = new System.Drawing.Size(225, 22);
             this.UserID_Box.TabIndex = 6;
             // 
             // Data_Box
             // 
-            this.Data_Box.Location = new System.Drawing.Point(122, 236);
-            this.Data_Box.Margin = new System.Windows.Forms.Padding(2);
+            this.Data_Box.Location = new System.Drawing.Point(163, 290);
+            this.Data_Box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Data_Box.Name = "Data_Box";
-            this.Data_Box.Size = new System.Drawing.Size(170, 20);
+            this.Data_Box.Size = new System.Drawing.Size(225, 22);
             this.Data_Box.TabIndex = 7;
             // 
             // Time_Box
             // 
-            this.Time_Box.Location = new System.Drawing.Point(122, 258);
-            this.Time_Box.Margin = new System.Windows.Forms.Padding(2);
+            this.Time_Box.Location = new System.Drawing.Point(163, 318);
+            this.Time_Box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Time_Box.Name = "Time_Box";
-            this.Time_Box.Size = new System.Drawing.Size(170, 20);
+            this.Time_Box.Size = new System.Drawing.Size(225, 22);
             this.Time_Box.TabIndex = 8;
             // 
             // exit
             // 
-            this.exit.Location = new System.Drawing.Point(575, 281);
-            this.exit.Margin = new System.Windows.Forms.Padding(2);
+            this.exit.Location = new System.Drawing.Point(767, 346);
+            this.exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(86, 28);
+            this.exit.Size = new System.Drawing.Size(115, 34);
             this.exit.TabIndex = 9;
             this.exit.Text = "Вернуться";
             this.exit.UseVisualStyleBackColor = true;
@@ -130,9 +128,10 @@
             // 
             // Upload
             // 
-            this.Upload.Location = new System.Drawing.Point(297, 211);
+            this.Upload.Location = new System.Drawing.Point(396, 260);
+            this.Upload.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Upload.Name = "Upload";
-            this.Upload.Size = new System.Drawing.Size(106, 30);
+            this.Upload.Size = new System.Drawing.Size(141, 37);
             this.Upload.TabIndex = 10;
             this.Upload.Text = "Добавить";
             this.Upload.UseVisualStyleBackColor = true;
@@ -140,17 +139,21 @@
             // 
             // ViewUpload
             // 
+            this.ViewUpload.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ViewUpload.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ViewUpload.Location = new System.Drawing.Point(9, 109);
+            this.ViewUpload.Location = new System.Drawing.Point(12, 134);
+            this.ViewUpload.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ViewUpload.Name = "ViewUpload";
-            this.ViewUpload.Size = new System.Drawing.Size(661, 94);
+            this.ViewUpload.RowHeadersWidth = 51;
+            this.ViewUpload.Size = new System.Drawing.Size(881, 116);
             this.ViewUpload.TabIndex = 11;
             // 
             // AddShifts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 320);
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ClientSize = new System.Drawing.Size(896, 394);
             this.Controls.Add(this.ViewUpload);
             this.Controls.Add(this.Upload);
             this.Controls.Add(this.exit);
@@ -162,7 +165,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddShifts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddShifts";

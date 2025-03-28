@@ -2,11 +2,8 @@
 using CafeBase.Windows;
 using MySql.Data.MySqlClient;
 using System;
-using System.Data;
 using System.Drawing;
-using System.Net;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CafeBase
 {
@@ -19,8 +16,27 @@ namespace CafeBase
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            LogIN.MouseEnter += LogIN_MouseEnter;
+            LogIN.MouseLeave += LogIN_MouseLeave;
+            OFF.MouseEnter += OFF_MouseEnter;
+            OFF.MouseLeave += OFF_MouseLeave;
         }
-
+        private void LogIN_MouseLeave(object sender, EventArgs e)
+        {
+            LogIN.BackColor = ColorTranslator.FromHtml("#FFFFFF");
+        }
+        private void OFF_MouseLeave(object sender, EventArgs e)
+        {
+            OFF.BackColor = ColorTranslator.FromHtml("#FFFFFF");
+        }
+        private void LogIN_MouseEnter(object sender, EventArgs e)
+        {
+            LogIN.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+        private void OFF_MouseEnter(object sender, EventArgs e)
+        {
+            OFF.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
         private void LogIN_Click(object sender, EventArgs e)
         {
             string cs = SQL.Getconnect();
@@ -28,7 +44,7 @@ namespace CafeBase
             {
                 var con = new MySqlConnection(cs);
                 con.Open();
-                var stm = String.Format("SELECT Name, Surname , Job_title , Status FROM access_rights WHERE Login = \"{0}\" AND password = \"{1}\"",
+                var stm = String.Format("SELECT Name, Surname , Job_title , Status FROM access_rights WHERE Login = '{0}' AND password = '{1}'",
                 Login1.Text,
                 Password.Text);
                 var cmd = new MySqlCommand(stm, con);

@@ -38,9 +38,9 @@
             // 
             // LogIN
             // 
-            this.LogIN.Location = new System.Drawing.Point(291, 84);
+            this.LogIN.Location = new System.Drawing.Point(246, 84);
             this.LogIN.Name = "LogIN";
-            this.LogIN.Size = new System.Drawing.Size(86, 30);
+            this.LogIN.Size = new System.Drawing.Size(131, 30);
             this.LogIN.TabIndex = 0;
             this.LogIN.Text = "Войти";
             this.LogIN.UseVisualStyleBackColor = true;

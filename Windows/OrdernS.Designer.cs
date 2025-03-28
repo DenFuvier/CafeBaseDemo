@@ -35,6 +35,7 @@
             // 
             // ViewOrdernS
             // 
+            this.ViewOrdernS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ViewOrdernS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ViewOrdernS.Location = new System.Drawing.Point(12, 12);
             this.ViewOrdernS.Name = "ViewOrdernS";
@@ -58,6 +59,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1488, 488);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.ViewOrdernS);

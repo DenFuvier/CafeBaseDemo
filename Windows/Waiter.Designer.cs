@@ -37,10 +37,10 @@
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(979, 333);
-            this.Exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Exit.Location = new System.Drawing.Point(1305, 410);
+            this.Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(77, 23);
+            this.Exit.Size = new System.Drawing.Size(103, 28);
             this.Exit.TabIndex = 0;
             this.Exit.Text = "Выход";
             this.Exit.UseVisualStyleBackColor = true;
@@ -48,22 +48,23 @@
             // 
             // ViewOrdernS
             // 
+            this.ViewOrdernS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ViewOrdernS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ViewOrdernS.Location = new System.Drawing.Point(9, 10);
-            this.ViewOrdernS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ViewOrdernS.Location = new System.Drawing.Point(12, 12);
+            this.ViewOrdernS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ViewOrdernS.Name = "ViewOrdernS";
             this.ViewOrdernS.ReadOnly = true;
             this.ViewOrdernS.RowHeadersWidth = 51;
             this.ViewOrdernS.RowTemplate.Height = 24;
-            this.ViewOrdernS.Size = new System.Drawing.Size(1047, 194);
+            this.ViewOrdernS.Size = new System.Drawing.Size(1396, 239);
             this.ViewOrdernS.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(8, 209);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(11, 257);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 28);
+            this.button1.Size = new System.Drawing.Size(242, 34);
             this.button1.TabIndex = 2;
             this.button1.Text = "Выбрать время заказа";
             this.button1.UseVisualStyleBackColor = true;
@@ -71,10 +72,10 @@
             // 
             // AddOrdxcen
             // 
-            this.AddOrdxcen.Location = new System.Drawing.Point(141, 209);
-            this.AddOrdxcen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddOrdxcen.Location = new System.Drawing.Point(279, 257);
+            this.AddOrdxcen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddOrdxcen.Name = "AddOrdxcen";
-            this.AddOrdxcen.Size = new System.Drawing.Size(129, 28);
+            this.AddOrdxcen.Size = new System.Drawing.Size(172, 34);
             this.AddOrdxcen.TabIndex = 3;
             this.AddOrdxcen.Text = "Добавить заказ";
             this.AddOrdxcen.UseVisualStyleBackColor = true;
@@ -82,14 +83,15 @@
             // 
             // Waiter
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1065, 366);
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ClientSize = new System.Drawing.Size(1420, 450);
             this.Controls.Add(this.AddOrdxcen);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ViewOrdernS);
             this.Controls.Add(this.Exit);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Waiter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Waiter";

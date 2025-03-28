@@ -4,12 +4,7 @@ using CafeBase.Windows;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CafeBase
@@ -25,7 +20,45 @@ namespace CafeBase
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
+
+            AddOrdxcen.MouseLeave += AddOrdxcen_MouseLeave;
+            AddOrdxcen.MouseEnter += AddOrdxcen_MouseEnter;
+            button1.MouseEnter += button1_MouseEnter;
+            button1.MouseLeave += button1_mouseLeave;
+            Exit.MouseLeave += Exit_MouseLeave;
+            Exit.MouseEnter += Exit_MouseEnter;
         }
+
+        private void Exit_MouseEnter(object sender, EventArgs e)
+        {
+            Exit.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
+        private void Exit_MouseLeave(object sender, EventArgs e)
+        {
+            Exit.BackColor = ColorTranslator.FromHtml("#FFFFF");
+        }
+
+        private void button1_mouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = ColorTranslator.FromHtml("#FFFFF");
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            button1.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
+        private void AddOrdxcen_MouseEnter(object sender, EventArgs e)
+        {
+            AddOrdxcen.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
+        private void AddOrdxcen_MouseLeave(object sender, EventArgs e)
+        {
+            AddOrdxcen.BackColor = ColorTranslator.FromHtml("#FFFFF");
+        }
+
         private void LoadOrdens()
         {
             string cs = sql.Getconnect();

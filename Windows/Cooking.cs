@@ -1,9 +1,9 @@
 ﻿using CafeBase.Classes;
 using CafeBase.ConnectSQL;
 using MySql.Data.MySqlClient;
-using Mysqlx;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace CafeBase.Windows
@@ -21,7 +21,33 @@ namespace CafeBase.Windows
             ID_box.Hide();
             LoadOrdens();
             ViewOrdernSS.SelectionChanged += ViewOrdernSS_SelectionChanged;
+            Exit.MouseEnter += Exit_MouseEnter;
+            Exit.MouseLeave += Exit_MouseLeave;
+            Change.MouseEnter += Change_MouseEnter;
+            Change.MouseLeave += Change_MouseLeave;
+
         }
+
+        private void Change_MouseLeave(object sender, EventArgs e)
+        {
+           Change.BackColor = ColorTranslator.FromHtml("#FFFFFF");
+        }
+
+        private void Change_MouseEnter(object sender, EventArgs e)
+        {
+             Change.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
+        private void Exit_MouseLeave(object sender, EventArgs e)
+        {
+            Exit.BackColor = ColorTranslator.FromHtml("#FFFFFF");
+        }
+
+        private void Exit_MouseEnter(object sender, EventArgs e)
+        {
+            Exit.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
         private void ViewOrdernSS_SelectionChanged(object sender, EventArgs e)
         {
             int number = ViewOrdernSS.CurrentRow.Index;

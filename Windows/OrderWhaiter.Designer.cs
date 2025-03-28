@@ -39,19 +39,20 @@
             // 
             this.Ordernnn_View.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Ordernnn_View.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Ordernnn_View.Location = new System.Drawing.Point(12, 12);
+            this.Ordernnn_View.Location = new System.Drawing.Point(16, 15);
+            this.Ordernnn_View.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Ordernnn_View.Name = "Ordernnn_View";
             this.Ordernnn_View.ReadOnly = true;
             this.Ordernnn_View.RowHeadersWidth = 51;
-            this.Ordernnn_View.Size = new System.Drawing.Size(776, 142);
+            this.Ordernnn_View.Size = new System.Drawing.Size(1197, 175);
             this.Ordernnn_View.TabIndex = 0;
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(695, 223);
-            this.Exit.Margin = new System.Windows.Forms.Padding(2);
+            this.Exit.Location = new System.Drawing.Point(1088, 277);
+            this.Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(94, 29);
+            this.Exit.Size = new System.Drawing.Size(125, 36);
             this.Exit.TabIndex = 2;
             this.Exit.Text = "Вернуться";
             this.Exit.UseVisualStyleBackColor = true;
@@ -59,9 +60,10 @@
             // 
             // TimeBox
             // 
-            this.TimeBox.Location = new System.Drawing.Point(12, 160);
+            this.TimeBox.Location = new System.Drawing.Point(16, 197);
+            this.TimeBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TimeBox.Name = "TimeBox";
-            this.TimeBox.Size = new System.Drawing.Size(124, 32);
+            this.TimeBox.Size = new System.Drawing.Size(165, 39);
             this.TimeBox.TabIndex = 3;
             this.TimeBox.Text = "Выбрать время : ";
             this.TimeBox.UseVisualStyleBackColor = true;
@@ -69,25 +71,27 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(12, 198);
+            this.btnReset.Location = new System.Drawing.Point(16, 244);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(114, 28);
+            this.btnReset.Size = new System.Drawing.Size(152, 34);
             this.btnReset.TabIndex = 4;
             this.btnReset.Text = "Сбросить :";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // Shifts
+            // OrderWhaiter
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(800, 263);
+            this.ClientSize = new System.Drawing.Size(1225, 324);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.TimeBox);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.Ordernnn_View);
-            this.Name = "Shifts";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "OrderWhaiter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shifts";
             ((System.ComponentModel.ISupportInitialize)(this.Ordernnn_View)).EndInit();

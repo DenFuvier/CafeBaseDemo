@@ -52,6 +52,7 @@
             // 
             // ViewOrdernSS
             // 
+            this.ViewOrdernSS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ViewOrdernSS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ViewOrdernSS.Location = new System.Drawing.Point(12, 12);
             this.ViewOrdernSS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -104,7 +105,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 305);
+            this.textBox1.Location = new System.Drawing.Point(157, 305);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -124,6 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1488, 487);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);

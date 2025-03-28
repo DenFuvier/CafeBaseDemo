@@ -4,6 +4,7 @@ using CafeBase.Windows;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace CafeBase
@@ -21,6 +22,42 @@ namespace CafeBase
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            button1.MouseLeave += button1_MouseLeave;
+            button1.MouseEnter += button1_MouseEnter;
+            Change.MouseLeave += Change_MouseLeave;
+            Change.MouseEnter += Change_MouseEnter;
+            Exit.MouseLeave += Exit_MouseLeave;
+            Exit.MouseEnter += Exit_MouseEnter;
+        }
+
+        private void Exit_MouseEnter(object sender, EventArgs e)
+        {
+            Exit.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
+        private void Exit_MouseLeave(object sender, EventArgs e)
+        {
+            Exit.BackColor = ColorTranslator.FromHtml("#FFFFF");
+        }
+
+        private void Change_MouseEnter(object sender, EventArgs e)
+        {
+            Change.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
+        private void Change_MouseLeave(object sender, EventArgs e)
+        {
+            Change.BackColor = ColorTranslator.FromHtml("#FFFFF");
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            button1.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = ColorTranslator.FromHtml("#FFFFF");
         }
 
         private void Exit_Click(object sender, EventArgs e)

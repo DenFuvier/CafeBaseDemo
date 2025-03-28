@@ -36,6 +36,7 @@
             // 
             // AdminViewShifts
             // 
+            this.AdminViewShifts.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AdminViewShifts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.AdminViewShifts.Location = new System.Drawing.Point(12, 12);
             this.AdminViewShifts.Name = "AdminViewShifts";
@@ -68,6 +69,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 299);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

@@ -4,9 +4,8 @@ using CafeBase.Trash;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
+using System.Drawing;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CafeBase.Windows
 {
@@ -22,7 +21,31 @@ namespace CafeBase.Windows
             LoadPOOP();
             UserIDView.SelectionChanged += UserIDView_SelectionChanged;
             ViewUpload.SelectionChanged += ViewUpload_SelectionChanged;
+            exit.MouseEnter += exit_MouseEnter;
+            Upload.MouseEnter += Upload_MouseEnter;
+            Upload.MouseLeave += Upload_MouseLeave;
+            exit.MouseLeave += exit_MouseLeave;
         }
+        private void Upload_MouseLeave(object sender, EventArgs e)
+        {
+
+            exit.BackColor = ColorTranslator.FromHtml("#FFFFFF");
+        }
+        private void exit_MouseLeave(object sender, EventArgs e)
+        {
+
+            exit.BackColor = ColorTranslator.FromHtml("#FFFFF");
+        }
+        private void exit_MouseEnter(object sender, EventArgs e)
+        {
+
+            exit.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+        private void Upload_MouseEnter (object sender, EventArgs e)
+        {
+            Upload.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
         private void UserIDView_SelectionChanged(object sender, EventArgs e)
         { 
          int number = UserIDView.CurrentRow.Index;
@@ -137,35 +160,10 @@ namespace CafeBase.Windows
                 MessageBox.Show(ex.Message);
             }
         }
-      /*  private void change()
-        {
-
-            string cs = sql.Getconnect();
-            try
-            {
-                var con = new MySqlConnection(cs);
-                con.Open();
-                var stm = $"UPDATE shifts SET ShiftsDate = '{Data_Box.Text}', Shiftstime = '{Time_Box.Text}' WHERE UserID = '{UserID_Box.Text}'";
-                var cmd = new MySqlCommand(stm, con);
-                MySqlDataReader Reader = cmd.ExecuteReader();
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-      */
         private void button1_Click(object sender, EventArgs e)
         {
             AdddButton();
             LoadPOOP();
         }
-
-        //private void Chage_b_Click(object sender, EventArgs e)
-        //{
-          //  change();
-            //LoadPOOP();
-        //}
     }
 }

@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using Microsoft.VisualBasic;
+using System.Drawing;
+
 namespace CafeBase.Windows
 {
     public partial class OrderWhaiter: Form
@@ -19,6 +21,42 @@ namespace CafeBase.Windows
             this.MinimizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             LoadShift();
+            TimeBox.MouseLeave += TimeBox_MouseLeave;
+            TimeBox.MouseEnter += TimeBox_MouseEnter;
+            btnReset.MouseLeave += btnReset_MouseLeave;
+            btnReset.MouseEnter += btnReset_MouseEnter;
+            Exit.MouseLeave += Exit_MouseLeave;
+            Exit.MouseEnter += Exit_MouseEnter;
+        }
+
+        private void Exit_MouseEnter(object sender, EventArgs e)
+        {
+            Exit.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
+        private void Exit_MouseLeave(object sender, EventArgs e)
+        {
+            Exit.BackColor = ColorTranslator.FromHtml("#FFFFF");
+        }
+
+        private void btnReset_MouseEnter(object sender, EventArgs e)
+        {
+            btnReset.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
+        private void btnReset_MouseLeave(object sender, EventArgs e)
+        {
+            btnReset.BackColor = ColorTranslator.FromHtml("#FFFFF");
+        }
+
+        private void TimeBox_MouseEnter(object sender, EventArgs e)
+        {
+           TimeBox.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
+        private void TimeBox_MouseLeave(object sender, EventArgs e)
+        {
+            TimeBox.BackColor = ColorTranslator.FromHtml("#FFFFF");
         }
 
         private void LoadShift()

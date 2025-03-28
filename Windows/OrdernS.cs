@@ -4,6 +4,7 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace CafeBase
 {
@@ -18,7 +19,20 @@ namespace CafeBase
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            Exit.MouseLeave += Exit_MouseLeave;
+            Exit.MouseEnter += Exit_MouseEnter;
         }
+
+        private void Exit_MouseEnter(object sender, EventArgs e)
+        {
+            Exit.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
+        private void Exit_MouseLeave(object sender, EventArgs e)
+        {
+            Exit.BackColor = ColorTranslator.FromHtml("#FFFFF");
+        }
+
         private void LoadOrdens()
         { 
          string cs = sql.Getconnect();

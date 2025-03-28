@@ -4,6 +4,7 @@ using CafeBase.Windows;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace CafeBase.Trash
@@ -17,7 +18,31 @@ namespace CafeBase.Trash
         {
             InitializeComponent();
             ADM();
+            button1.MouseEnter += Button1_MouseEnter;
+            button1.MouseLeave += Button1_MouseLeave;
+            button2.MouseEnter += Button2_MouseEnter;
+            button2.MouseLeave += button2_MouseLeave;
         }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            button2.BackColor = ColorTranslator.FromHtml("#FFFFF");
+        }
+
+        private void Button2_MouseEnter(object sender, EventArgs e)
+        {
+            button2.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
+        private void Button1_MouseEnter(object sender, EventArgs e)
+        {
+            button1.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+        private void Button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = ColorTranslator.FromHtml("#FFFFF");
+        }
+
         private void ADM()
         {
             string cs = sql.Getconnect();
@@ -66,6 +91,8 @@ namespace CafeBase.Trash
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
+            OpenDialogAdmin OP = new OpenDialogAdmin();
+            OP.Show();
 
         }
     }

@@ -3,6 +3,7 @@ using MySql.Data.MySqlClient;
 using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace CafeBase.Windows
@@ -20,7 +21,30 @@ namespace CafeBase.Windows
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             RadioOK.Click += RadioOK_Click;
             RadioNOT.Click += RadioNOT_Click;
+            PlusDish.MouseEnter += PlusDish_MouseEnter;
+            PlusDish.MouseLeave += PlusDish_MouseLeave;
+            exitthis.MouseEnter += Exitthis_MouseEnter;
+            exitthis.MouseLeave += Exitthis_MouseLeave;
         }
+        private void Exitthis_MouseEnter(object sender, EventArgs e)
+        {
+            exitthis.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+        private void Exitthis_MouseLeave(object sender, EventArgs e)
+        {
+            exitthis.BackColor = ColorTranslator.FromHtml("#FFFFFF ");
+        }
+
+        private void PlusDish_MouseLeave(object sender, EventArgs e)
+        {
+            PlusDish.BackColor = ColorTranslator.FromHtml("#FFFFFF");
+        }
+
+        private void PlusDish_MouseEnter(object sender, EventArgs e)
+        {
+            PlusDish.BackColor = ColorTranslator.FromHtml("#F4E8D3");
+        }
+
         private void RadioOK_Click(object sender, EventArgs e)
         {
             DataBoxTime.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
@@ -56,6 +80,7 @@ namespace CafeBase.Windows
                 var cmd = new MySqlCommand(stm, con);
                 MySqlDataReader Reader = cmd.ExecuteReader();
                 con.Close();
+                MessageBox.Show("Успешно добавлен заказ!");
             }
             catch (Exception ex)
             {
